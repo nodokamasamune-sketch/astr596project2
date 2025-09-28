@@ -59,7 +59,7 @@ class ODE:
         Shape nsteps x dimensions
     
     '''
-    def __init__(self, method, N, initial_positions, initial_velocities, dimensions, duration, dt, masses=None, R=0):
+    def __init__(self, method, N, initial_positions, initial_velocities, dimensions, duration, dt, masses=None, R=100):
         self.G = 4*np.pi**2
         if masses is not None:
             self.masses = masses
